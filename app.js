@@ -24,17 +24,17 @@ app.post('/',function(req,res){
    }
    else if (bmi>25){
     res.send("your BMI is "+bmi);
-    res.send("you are Overweight");
+    res.send("\nyou are Overweight");
     res.write(`\nyour ideal weight range is ${min} to ${max}`);
     res.end();
    }
    else if (bmi>18.5){res.send("your BMI is "+bmi);
-    res.send("you are Normal");
+    res.send("\nyou are Normal");
     res.write(`\nyour ideal weight range is ${min} to ${max}`);
     res.end();
    }
    else{res.send("your BMI is "+bmi);
-    res.send("you are Underweight");
+    res.send("\nyou are Underweight");
     res.write(`\nyour ideal weight range is ${min} to ${max}`);
     res.end();
    }
